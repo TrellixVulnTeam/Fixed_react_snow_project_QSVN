@@ -1,0 +1,167 @@
+@import '../../styles/main.scss';
+
+html {
+  font-size: 24px;
+  scroll-behavior: smooth;
+  font-family: $text-minor;
+
+  &::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $red;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-image: linear-gradient($green, $blue);
+  }
+}
+
+#home {
+  padding-top: 66px;
+}
+
+.section {
+  padding: 1em;
+  margin: 2em auto 4em;
+
+  @media (min-width: 768px) {
+    padding: 1em 2.5em;
+    margin-top: 6em;
+    margin-bottom: 8em;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 1em 4em;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 1em calc((100vw - 1100px) / 2);
+  }
+
+  &.about {
+    margin-bottom: 6em;
+
+    @media (min-width: 768px) {
+      margin-top: 4em;
+      margin-bottom: 8em;
+    }
+  }
+
+  &__title {
+    margin: 1em auto 2em;
+  }
+}
+
+#about {
+  margin-bottom: 3em;
+}
+
+.interlude {
+  &__img {
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+
+    @media (min-width: 768px) {
+      height: 95vh;
+    }
+
+    @media (min-width: 1400px) {
+      height: 100vh;
+    }
+
+    &--before {
+      &-calendar {
+        object-position: 85% 50%;
+
+        @media (min-width: 1024px) {
+          object-position: 62% 50%;
+        }
+      }
+
+      &-membership {
+        object-position: 25% 50%;
+
+        @media (min-width: 768px) {
+          object-position: 30% 50%;
+        }
+
+        @media (min-width: 1024px) {
+          object-position: 50% 50%;
+        }
+
+        @media (min-width: 1400px) {
+          object-position: 50% 75%;
+        }
+      }
+
+      &-news {
+        object-position: 50% 50%;
+
+        @media (min-width: 1024px) {
+          object-position: 100% 50%;
+        }
+      }
+
+      &-partners {
+        object-position: 72% 50%;
+
+        @media (min-width: 1024px) {
+          object-position: 20% 50%;
+        }
+
+        @media (min-width: 1400px) {
+          object-position: 50% 30%;
+        }
+      }
+
+      &-contact {
+        object-position: 40% 50%;
+
+        @media (min-width: 1024px) {
+          object-position: 50% 50%;
+        }
+
+        @media (min-width: 1400px) {
+          object-position: 50% 85%;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  font-family: $text-minor;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: $black;
+  background-color: $red;
+  padding: calc(10px + 0.45vw) calc(10px + 1.05vw);
+  border: solid $red 1px;
+  outline: solid $red thick;
+  transition: outline-offset 0.1s, outline-width 0.1s, transform 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    outline-offset: calc(6px + 0.35vw);
+    outline-width: 0;
+    transform: scale(1.1);
+    background-color: $green;
+    color: $black;
+    border: none;
+  }
+
+  &:active {
+    outline-offset: 0;
+    outline-width: thick;
+    transform: scale(0.9);
+    background-color: $blue;
+    outline-color: $green;
+    color: $white;
+    border: none;
+  }
+}
