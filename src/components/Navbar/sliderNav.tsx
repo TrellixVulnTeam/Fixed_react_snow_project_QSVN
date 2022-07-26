@@ -21,7 +21,7 @@ const txt = sliderNav.map((slide) => (
 ));
 
 export const SliderBar = () => (
-  <div className="slider home__slider">
+  <div className="slider home__slider" id='home'>
     {pics}
     {txt}
   </div>

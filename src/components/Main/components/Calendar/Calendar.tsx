@@ -1,5 +1,6 @@
 import React from 'react';
 import { calendarData } from './Calendar.data';
+import './Calendar.scss'
 
 const eventItems = calendarData.map((item) => (
   <React.Fragment key={item.title}>
