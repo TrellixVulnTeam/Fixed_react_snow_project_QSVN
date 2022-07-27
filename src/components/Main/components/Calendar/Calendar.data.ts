@@ -16,7 +16,7 @@ export const calendarData = [
   {
     title: 'charity work',
     date: '31.12.2020',
-    city: 'Connecticut',
+    city: 'Stamford',
     about:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, praesentium blanditiis inventore quisquam tempore maiores?',
   },
