@@ -6,6 +6,7 @@ import { News } from './components/News/News';
 import { Membership } from './components/Membership/Membership';
 import { HOC } from './components/HOC';
 import './Main.scss';
+import Partners from './components/Partners/Partners';
 
 const temArray = navNames.filter((item) => item !== 'home');
 
@@ -13,7 +14,7 @@ const tempObject: { [key: string]: JSX.Element | null } = {
   about: <About />,
   calendar: <Calendar />,
   membership: <Membership />,
-  partners: null,
+  partners: <Partners />,
   news: <News />,
   contact: null,
 };
