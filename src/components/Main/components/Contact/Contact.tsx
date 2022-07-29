@@ -1,9 +1,9 @@
 import React, {useState } from 'react'
-import './Partners.scss';
+import './Contact.scss';
 
-function Partners() {
+function Contact() {
     const [formData, setFormData] = useState({
-        username: '',
+        name: '',
         email: '',
         phone: '',
         skill_level: 'amatuer',
@@ -23,14 +23,14 @@ function Partners() {
     }
   return (
     <>
-    <h1 className="section__title">Partners</h1>
+    <h1 className="section__title">Contact Us</h1>
     <form onSubmit={onSubmitHandler}>
     <div className='form-group'>
-        <label htmlFor='username' className='form-label'>User Name</label>
-        <input className='form-control' name='username' onChange={onChangeHandler}/>
+        <label htmlFor='name' className='form-label'>name</label>
+        <input className='form-control' name='name' onChange={onChangeHandler}/>
     </div>
     <div className='form-group'>
-        <label htmlFor='email' className='form-label'>Email</label>
+        <label htmlFor='email' className='form-label'>email</label>
         <input className='form-control' name='email' onChange={onChangeHandler}/>
     </div>
     <div className='form-group'>
@@ -62,11 +62,11 @@ function Partners() {
         </div>
     </div>
     <div>
-        <button className='btn' type='submit'></button>
+        <button className='btn' type='submit'>Submit here</button>
     </div>
     </form>
     </>
   )
 }
 
-export default Partners
+export default Contact

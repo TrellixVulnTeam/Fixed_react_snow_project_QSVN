@@ -6,7 +6,7 @@ import { News } from './components/News/News';
 import { Membership } from './components/Membership/Membership';
 import { HOC } from './components/HOC';
 import './Main.scss';
-import Partners from './components/Partners/Partners';
+import Contact from './components/Contact/Contact';
 
 const temArray = navNames.filter((item) => item !== 'home');
 
@@ -14,9 +14,9 @@ const tempObject: { [key: string]: JSX.Element | null } = {
   about: <About />,
   calendar: <Calendar />,
   membership: <Membership />,
-  partners: <Partners />,
+  partners: null,
   news: <News />,
-  contact: null,
+  contact: <Contact />,
 };
 
 const getSectionsBlocks = temArray.map((name) => (
