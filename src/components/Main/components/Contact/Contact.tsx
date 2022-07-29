@@ -26,19 +26,19 @@ function Contact() {
     <h1 className="section__title">Contact Us</h1>
     <form onSubmit={onSubmitHandler}>
     <div className='form-group'>
-        <label htmlFor='name' className='form-label'>name</label>
+        <label htmlFor='name' className='form-label'>name</label> <br/>
         <input className='form-control' name='name' onChange={onChangeHandler}/>
     </div>
     <div className='form-group'>
-        <label htmlFor='email' className='form-label'>email</label>
+        <label htmlFor='email' className='form-label'>email</label><br/>
         <input className='form-control' name='email' onChange={onChangeHandler}/>
     </div>
     <div className='form-group'>
-        <label htmlFor='phone' className='form-label'>phone</label>
+        <label htmlFor='phone' className='form-label'>phone</label><br/>
         <input className='form-control' name='phone' onChange={onChangeHandler}/>
     </div>
     <div className='form-group'>
-        <label htmlFor='skill_level' className='form-label'>skill level</label>
+        <label htmlFor='skill_level' className='form-label'>skill level</label><br/>
         <select className='form-select' name='skill_level' onChange={onChangeHandler}>
             <option value='amatuer'>amatuer</option>
             <option value='proficient'>proficient</option>
@@ -46,7 +46,7 @@ function Contact() {
         </select>
     </div>
     <div className='form-group'>
-        <label htmlFor='gender' className='form-label'>gender</label>
+        <label htmlFor='gender' className='form-label'>gender</label><br/>
         <div>
             <div>
                 <input type='radio' name='gender' value='male' onChange={onChangeHandler}/>
