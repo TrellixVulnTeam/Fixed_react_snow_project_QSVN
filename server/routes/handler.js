@@ -5,7 +5,8 @@ router.get('/BackendData', (req, res) => {
     const str = [
         {
             "name": 'Joe',
-
+            "email": "email",
+            "phone": "589-8576"
         }
     ];
     res.end(JSON.stringify(str));
