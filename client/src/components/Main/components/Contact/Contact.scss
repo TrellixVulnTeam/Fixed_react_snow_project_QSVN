@@ -1,0 +1,108 @@
+@import '../../../../styles/main.scss';
+.contact {
+  &__social-media {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    $min_font: 48px;
+    $max_font: 60px;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+    @media (min-width: 768px) {
+      justify-content: space-evenly;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 0 1.5em;
+    }
+
+    .tooltip {
+      visibility: hidden;
+      width: 90vw;
+      background-color: rgba(255, 255, 255, 0.95);
+      color: $black;
+      text-align: center;
+      border-radius: 6px;
+      padding: 0.5em;
+      position: absolute;
+      z-index: 1;
+      bottom: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      $min_font: 24px;
+      $max_font: 30px;
+      @include fluid-type($min_width, $max_width, $min_font, $max_font);
+      line-height: 1.5;
+      opacity: 0;
+      transition: all 1s;
+
+      @media (min-width: 768px) {
+        width: 75vw;
+      }
+
+      @media (min-width: 1024px) {
+        width: 55vw;
+      }
+
+      @media (min-width: 1400px) {
+        width: 35vw;
+      }
+
+      &.active {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .fa {
+    color: $blue;
+    animation: jello-vertical 5s ease-in-out infinite both;
+    cursor: pointer;
+
+    &:nth-of-type(2) {
+      color: $red;
+      animation-delay: 0.5s;
+    }
+
+    &:nth-of-type(3) {
+      color: $green;
+      animation-delay: 1s;
+    }
+  }
+
+  @keyframes jello-vertical {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    45% {
+      transform: scale3d(1, 1, 1);
+    }
+    46% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    48% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    52% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    54% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    56% {
+      transform: scale3d(1, 1, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+.btn {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}

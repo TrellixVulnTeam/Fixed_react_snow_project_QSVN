@@ -1,0 +1,32 @@
+@import '../../styles/main.scss';
+
+.PopUp {
+    position: fixed;
+    bottom: 130px;
+    right: 100px;
+    z-index: 1;
+    &__button {
+        position: absolute;
+        font-size: 1.5em;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: #C0C0C0;
+    }
+    &__Title {
+        font-size: 100px;
+    }
+    &__Paragraph {
+        font-size: 25px;
+        justify-content: center;
+        margin: 1em;
+        padding: 1em;
+    }
+    &__buttonClose {
+        position: absolute;
+        font-size: 1.5em;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: #C0C0C0;
+    }
+}
+

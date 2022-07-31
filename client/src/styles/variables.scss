@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+/*-----------------------*/
+/*         FONTS         */
+/*-----------------------*/
+$text-main: 'Archivo', sans-serif;
+$text-minor: 'Montserrat', sans-serif;
+
+/*------------------------*/
+/*         COLORS         */
+/*------------------------*/
+$white: #f7f7f2;
+$black: #000000;
+$green: #99cc33;
+$blue: #009999;
+$red: #fd3a4a;
+
+/*---------------------------*/
+/*         FONT SIZE         */
+/*---------------------------*/
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+
+/*----------------------------*/
+/*     HEADERS CORRECTION     */
+/*----------------------------*/
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop
