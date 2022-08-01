@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const routesHandler = require('./routes/handler.js');
 
 const app = express();
+app.use(require("cors")());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use('/', routesHandler);

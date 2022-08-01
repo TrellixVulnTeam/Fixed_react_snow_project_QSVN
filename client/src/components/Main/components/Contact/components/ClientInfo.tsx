@@ -8,7 +8,7 @@ function ClientInfo() {
     const [items, setItems] = useState<any[]>([]);
 
     const fetchItems = async() => {
-        const data = await fetch('/BackendData');
+        const data = await fetch("http://localhost:4000/BackendData");
         const items = await data.json();
         console.log(data.json)
         setItems(items);
@@ -26,8 +26,8 @@ function ClientInfo() {
                         <div className="card">
                             <div className="card-body p-1">
                                 <h6 className="card-title">{item.name}</h6>
-                                <p className="card-text">{item.msg}</p>
-                                <p className="card-text"><i>by {item.username}</i></p>
+                                <p className="card-text">{item.email}</p>
+                                <p className="card-text"><i>by {item.phone}</i></p>
                             </div>
                         </div>
                     </div>

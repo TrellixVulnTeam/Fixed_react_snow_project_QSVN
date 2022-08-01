@@ -13,7 +13,7 @@ router.get('/BackendData', (req, res) => {
 });
 
 router.post('/addBackendData', (req, res) => {
-    res.end('NA');
+    res.JSON('NA');
 });
 
 module.exports = router;
