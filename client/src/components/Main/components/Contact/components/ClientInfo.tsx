@@ -17,7 +17,6 @@ function ClientInfo() {
 
     return(
         <>
-        <div>Hi</div>
         <section>
             {
             items.map(item => (
@@ -27,14 +26,16 @@ function ClientInfo() {
                             <div className="card-body p-1">
                                 <h6 className="card-title">{item.name}</h6>
                                 <p className="card-text">{item.email}</p>
-                                <p className="card-text"><i>by {item.phone}</i></p>
+                                <p className="card-text"><i>{item.phone}</i></p>
+                                <p className="card-text">{item.skill_level}</p>
+                                <p className="card-text"><i>{item.gender}</i></p>
                             </div>
                         </div>
                     </div>
                 </div>
             ))
             }
-        </section>;
+        </section>
 </>
     )
 }

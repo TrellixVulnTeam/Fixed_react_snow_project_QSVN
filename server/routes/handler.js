@@ -5,9 +5,25 @@ router.get('/BackendData', (req, res) => {
     const str = [
         {
             "name": 'Joe',
-            "email": "email",
-            "phone": "589-8576"
-        }
+            "email": "Joe12@gmail.com",
+            "phone": "589-8576",
+            "skill level": "amatuer",
+            "gender": "male"
+        },
+        {
+            "name": 'Jolie',
+            "email": "Jolie78@outlook.com",
+            "phone": "457-2398",
+            "skill level": "proficient",
+            "gender": "female"
+        },
+        {
+            "name": 'Mark',
+            "email": "Mark34@outlook.com",
+            "phone": "634-9868",
+            "skill level": "expert",
+            "gender": "male"
+        },
     ];
     res.end(JSON.stringify(str));
 });
