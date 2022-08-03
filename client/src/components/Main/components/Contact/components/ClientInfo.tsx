@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './ClientInfo.scss'
 
 function ClientInfo() {
     useEffect( () => {
@@ -18,23 +19,28 @@ function ClientInfo() {
     return(
         <>
         <section>
+        <table className="card-body-p-1">
+                            <tr>
+                                <th className='card-title'>name</th>
+                                <th className='card-title'>email</th>
+                                <th className='card-title'>phone</th>
+                                <th className='card-title'>skill level</th>
+                                <th className='card-title'>gender</th>
+        </tr>
             {
-            items.map(item => (
-                <div className="container-fluid p-3 w-50">
-                    <div className="card-deck">
-                        <div className="card">
-                            <div className="card-body p-1">
-                                <h6 className="card-title">{item.name}</h6>
-                                <p className="card-text">{item.email}</p>
-                                <p className="card-text"><i>{item.phone}</i></p>
-                                <p className="card-text">{item.skill_level}</p>
-                                <p className="card-text"><i>{item.gender}</i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            items.map((item, key)=> (
+                <tr key={key}>
+
+                                <td className="card-text">{item.name}</td>
+                                <td className="card-text">{item.email}</td>
+                                <td className="card-text"><i>{item.phone}</i></td>
+                                <td className="card-text">{item.skill_level}</td>
+                                <td className="card-text"><i>{item.gender}</i></td>
+                                <br/>
+                                </tr>
             ))
             }
+            </table>
         </section>
 </>
     )
